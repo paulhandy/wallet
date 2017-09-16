@@ -217,7 +217,7 @@ var UI = (function(UI, $, undefined) {
 
         if (connection.lightWallet) {
           //oldIota.api.attachToTangle = localAttachToTangle;
-          curl.overrideAttachToTangle(oldIota.api);
+          libcurl.overrideAttachToTangle(oldIota.api);
           oldIota.api.interruptAttachingToTangle = localInterruptAttachingToTangle;
         }
         

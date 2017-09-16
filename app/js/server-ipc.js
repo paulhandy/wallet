@@ -1,7 +1,8 @@
 const ipcRenderer = require("electron").ipcRenderer;
 const clipboard   = require("electron").clipboard;
 
-var curllibjs = require('curl.lib.js');
+window.libcurl = require('curl.lib.js');
+window.libcurl.init();
 var isLightWallet = require("electron").remote.getGlobal("lightWallet");
 
 //only load for light wallets
